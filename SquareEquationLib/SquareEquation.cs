@@ -1,7 +1,7 @@
 ﻿namespace SquareEquationLib;
 
 
-
+//test
 public class SquareEquation
 {
     public static double[] Solve(double a, double b, double c)
@@ -38,7 +38,7 @@ public class SquareEquation
             var x2 = c/x1;
             result[0] = x1;
             result[1] = x2;
-            return result;
+            return result;  
         }
 
         else if (Math.Abs(d)<eps)
