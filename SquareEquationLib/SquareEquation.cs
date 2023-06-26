@@ -1,7 +1,7 @@
 ﻿namespace SquareEquationLib;
 
 
-//test
+
 public class SquareEquation
 {
     public static double[] Solve(double a, double b, double c)
@@ -55,7 +55,6 @@ public class SquareEquation
             double[] result = new double[0];
             return result;
         }
-
         
 
         throw new NotImplementedException();
