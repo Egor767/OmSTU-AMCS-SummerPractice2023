@@ -76,6 +76,7 @@ public class SquareEquation
         else
         {
             double[] result = new double[0];
+            
             return result;
         }
         

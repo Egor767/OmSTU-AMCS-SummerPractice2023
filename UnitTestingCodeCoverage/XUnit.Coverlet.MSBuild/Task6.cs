@@ -56,7 +56,7 @@ public class UnitTest1
             exception = except;
         }
     }
-    
+      
     [Then(@"квадратное уравнение имеет два корня \((.*), (.*)\) кратности один")]
     public void ДваКорня(string x1, string x2)
     {
