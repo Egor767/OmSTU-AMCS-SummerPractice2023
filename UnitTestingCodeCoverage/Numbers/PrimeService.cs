@@ -60,3 +60,4 @@ public class SquareEquation
         throw new NotImplementedException();
     }
 }
+
