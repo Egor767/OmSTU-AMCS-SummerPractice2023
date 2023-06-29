@@ -2,7 +2,7 @@ name: square equation test
 
 on:
   push:
-    branches: ["Tests"]
+    branches: ["Rutests"]
 
 jobs:
   build:
@@ -23,4 +23,4 @@ jobs:
         run: dotnet build SquareEquationLib --no-restore /p:ContinuousIntegrationBuild=true
 
       - name: XUnit Collector test
-        run: cd XUnit.Coverlet.Collector && dotnet test --collect:"XPlat Code Coverage"
+        run: dotnet test /p:CollectCoverage=true /p:CoverletOutputFormat=cobertura ./UnitTestingCodeCoverage/XUnit.Coverlet.MSBuild
