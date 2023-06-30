@@ -17,4 +17,4 @@ jobs:
           dotnet-version: 7.0.x
 
       - name: XUnit Collector test
-        run: dotnet test /p:CollectCoverage=true /p:CoverletOutputFormat=cobertura ./Spacebattletests/XUnit.Coverlet.MSBuild
+        run: dotnet test /p:CollectCoverage=true /p:CoverletOutputFormat=cobertura ./Spacebattle/Spacebattletests/XUnit.Coverlet.MSBuild
