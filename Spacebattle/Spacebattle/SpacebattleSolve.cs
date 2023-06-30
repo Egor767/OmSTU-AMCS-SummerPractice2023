@@ -22,7 +22,7 @@ public class Spacebattle
         {
             throw new System.Exception();
         }
-
+        
         if (ship.move_possible == false)
         {
             throw new System.Exception();
