@@ -1,0 +1,120 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<coverage line-rate="0.8" branch-rate="0.6" version="1.9" timestamp="1688147193" lines-covered="16" lines-valid="20" branches-covered="6" branches-valid="10">
+  <sources>
+    <source>/</source>
+  </sources>
+  <packages>
+    <package name="SpacebattleSolve" line-rate="0.8" branch-rate="0.6" complexity="16">
+      <classes>
+        <class name="Space.Ship" filename="home/ubuntu/OmSTU-AMCS-SummerPractice2023/Spacebattle/Spacebattle/SpacebattleSolve.cs" line-rate="1" branch-rate="1" complexity="5">
+          <methods>
+            <method name="get_x" signature="()" line-rate="1" branch-rate="1" complexity="1">
+              <lines>
+                <line number="5" hits="15" branch="False" />
+              </lines>
+            </method>
+            <method name="get_y" signature="()" line-rate="1" branch-rate="1" complexity="1">
+              <lines>
+                <line number="6" hits="15" branch="False" />
+              </lines>
+            </method>
+            <method name="get_speed_x" signature="()" line-rate="1" branch-rate="1" complexity="1">
+              <lines>
+                <line number="7" hits="11" branch="False" />
+              </lines>
+            </method>
+            <method name="get_speed_y" signature="()" line-rate="1" branch-rate="1" complexity="1">
+              <lines>
+                <line number="8" hits="11" branch="False" />
+              </lines>
+            </method>
+            <method name="get_move_possible" signature="()" line-rate="1" branch-rate="1" complexity="1">
+              <lines>
+                <line number="9" hits="13" branch="False" />
+              </lines>
+            </method>
+          </methods>
+          <lines>
+            <line number="5" hits="15" branch="False" />
+            <line number="6" hits="15" branch="False" />
+            <line number="7" hits="11" branch="False" />
+            <line number="8" hits="11" branch="False" />
+            <line number="9" hits="13" branch="False" />
+          </lines>
+        </class>
+        <class name="Space.Spacebattle" filename="home/ubuntu/OmSTU-AMCS-SummerPractice2023/Spacebattle/Spacebattle/SpacebattleSolve.cs" line-rate="0.7333" branch-rate="0.6" complexity="11">
+          <methods>
+            <method name="Move" signature="(Space.Ship)" line-rate="0.7142000000000001" branch-rate="0.6" complexity="10">
+              <lines>
+                <line number="15" hits="4" branch="False" />
+                <line number="16" hits="4" branch="True" condition-coverage="50% (2/4)">
+                  <conditions>
+                    <condition number="16" type="jump" coverage="50%" />
+                    <condition number="40" type="jump" coverage="50%" />
+                  </conditions>
+                </line>
+                <line number="17" hits="0" branch="False" />
+                <line number="18" hits="0" branch="False" />
+                <line number="21" hits="4" branch="True" condition-coverage="50% (2/4)">
+                  <conditions>
+                    <condition number="64" type="jump" coverage="50%" />
+                    <condition number="88" type="jump" coverage="50%" />
+                  </conditions>
+                </line>
+                <line number="22" hits="0" branch="False" />
+                <line number="23" hits="0" branch="False" />
+                <line number="26" hits="4" branch="True" condition-coverage="100% (2/2)">
+                  <conditions>
+                    <condition number="108" type="jump" coverage="100%" />
+                  </conditions>
+                </line>
+                <line number="27" hits="1" branch="False" />
+                <line number="28" hits="1" branch="False" />
+                <line number="31" hits="3" branch="False" />
+                <line number="32" hits="3" branch="False" />
+                <line number="34" hits="3" branch="False" />
+                <line number="37" hits="3" branch="False" />
+              </lines>
+            </method>
+            <method name=".ctor" signature="()" line-rate="1" branch-rate="1" complexity="1">
+              <lines>
+                <line number="13" hits="4" branch="False" />
+              </lines>
+            </method>
+          </methods>
+          <lines>
+            <line number="15" hits="4" branch="False" />
+            <line number="16" hits="4" branch="True" condition-coverage="50% (2/4)">
+              <conditions>
+                <condition number="16" type="jump" coverage="50%" />
+                <condition number="40" type="jump" coverage="50%" />
+              </conditions>
+            </line>
+            <line number="17" hits="0" branch="False" />
+            <line number="18" hits="0" branch="False" />
+            <line number="21" hits="4" branch="True" condition-coverage="50% (2/4)">
+              <conditions>
+                <condition number="64" type="jump" coverage="50%" />
+                <condition number="88" type="jump" coverage="50%" />
+              </conditions>
+            </line>
+            <line number="22" hits="0" branch="False" />
+            <line number="23" hits="0" branch="False" />
+            <line number="26" hits="4" branch="True" condition-coverage="100% (2/2)">
+              <conditions>
+                <condition number="108" type="jump" coverage="100%" />
+              </conditions>
+            </line>
+            <line number="27" hits="1" branch="False" />
+            <line number="28" hits="1" branch="False" />
+            <line number="31" hits="3" branch="False" />
+            <line number="32" hits="3" branch="False" />
+            <line number="34" hits="3" branch="False" />
+            <line number="37" hits="3" branch="False" />
+            <line number="13" hits="4" branch="False" />
+          </lines>
+        </class>
+      </classes>
+    </package>
+  </packages>
+</coverage>
