@@ -8,10 +8,8 @@ namespace XUnit.Coverlet.MSBuild;
 public class UnitTest1
 {
     private double eps = 1e-5; 
-    //private Spacebattle battle = new Spacebattle();
     private Exception exception = new Exception();
     private Ship ship = new Ship();
-    //private Ship result = new Ship();
     private double[] cords = new double[2];
     private double local_fuel_reserve;
     private double local_angle;
