@@ -1,5 +1,53 @@
 ﻿using System;
+using System.Collections.Concurrent;
 namespace Space;
+public class Pool<T>
+{
+    private readonly ConcurrentBag<T> _objects;
+    private readonly Func<T> _objectGenerator;
+
+    public Pool(Func<T> objectGenerator)
+    {
+        _objectGenerator = objectGenerator ?? throw new ArgumentNullException(nameof(objectGenerator));
+        _objects = new ConcurrentBag<T>();
+    }
+
+    public T Get() => _objects.TryTake(out T item) ? item : _objectGenerator();
+
+    public void Return(T item)
+    {
+        objects.Add(item);
+    } 
+}
+
+public class PoolGuard<T> : IDisposable
+{
+    private T object;
+    private Pool<T> pool;
+    private bool dispValue = false;
+    public PoolGuard(Pool<T> pool)
+    {
+        this.pool = pool;
+        this.object = pool.Get();
+    }
+    public void Dispose()
+    {
+        Dispose(disposing: true);
+        GC.SuppressFinalize(this);
+    }
+    protected virtual void Dispose(bool disposing)
+    {
+        if (!this.dispValue)
+        {
+            if (disposing) pool.Return(object);
+        }
+         _dispValue = true;
+    }
+    ~PoolGuard() 
+    {
+        Dispose(disposing: false); 
+    }
+}
 
 public class Ship 
 {
